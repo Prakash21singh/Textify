@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Roboto+Condensed&family=Rubik&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 1px;
+}
+.container {
+  /* filter: blur(2px); */
+  width: 100vw;
+  height: 100vh;
+  background: #fffbf5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top left, black, rgb(122, 121, 121));
+  position: relative;
+}
+.user_1 {
+  border: 10px solid rgba(159, 190, 190, 0.742);
+  width: 330px;
+  height: 530px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  background: url(./background.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 60px;
+  z-index: 10;
+  margin: 20px;
+}
+.active {
+  transition: 0.2s all;
+  box-shadow: 10px 10px 40px rgba(255, 255, 255, 0.169),
+    inset -10px -10px 40px black;
+}
+.user_2 {
+  border: 10px solid rgba(159, 190, 190, 0.742);
+  width: 330px;
+  height: 530px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  background: url(./background.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 60px;
+  z-index: 10;
+  margin: 20px;
+}
+.msgSend {
+  position: absolute;
+  width: 95%;
+  display: flex;
+  align-self: center;
+  margin-bottom: 10px;
+  bottom: 0;
+}
+.replySend {
+  position: absolute;
+  width: 95%;
+  display: flex;
+  align-self: center;
+  margin-bottom: 10px;
+  bottom: 0;
+}
+.msgSend input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+.replySend input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+.msgSend button {
+  border: none;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(13, 187, 97);
+  margin-left: 4px;
+  cursor: pointer;
+}
+.replySend button {
+  border: none;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(13, 187, 97);
+  margin-left: 4px;
+  cursor: pointer;
+}
+.msgSend button i {
+  filter: invert(100%);
+  font-size: 1.1rem;
+}
+.replySend button i {
+  filter: invert(100%);
+  font-size: 1.1rem;
+}
+.text {
+  background-color: #075e54;
+  color: white;
+  padding: 10px 45px 10px 10px;
+  margin-right: 16px;
+  border-radius: 8px;
+  max-width: 230px;
+  text-wrap: wrap;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  width: max-content;
+  position: relative;
+  font-size: 14px;
+}
+.time {
+  position: absolute;
+  bottom: 3px;
+  right: 6px;
+  font-size: 8px;
+  color: gray;
+}
+.msgs {
+  width: 97%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: end;
+  justify-content: end;
+  height: 100%;
+}
+.msgs2 {
+  width: 97%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: end;
+  justify-content: end;
+  height: 100%;
+}
+form {
+  display: flex;
+  width: 100%;
+}
+.reply {
+  background-color: rgba(54, 52, 52, 0.833);
+  align-self: self-start;
+}
+.intro {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  background: linear-gradient(to top left, black, rgb(122, 121, 121));
+}
+.intro img {
+  height: 200px;
+  margin-right: 20px;
+}
+.intro h1 {
+  font-size: 70px;
+  margin: 2px;
+  color: #f2f2f2;
+}
